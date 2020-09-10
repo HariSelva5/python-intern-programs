@@ -1,0 +1,38 @@
+{
+    "menu":
+    
+        {
+            "veg starters":
+            
+                {
+                    "gobi manchurian": 21,
+                    "veg roll": 32,
+                    "paneer roll":34,
+                    "mushroom roll":42
+                }
+            ,
+            "non veg starters":
+            
+                {
+                    "chicken kebab":23,
+                    "chicken tandoori":45,
+                    "grill chicken":56
+                }
+            ,
+            "veg maindish":
+            
+                {
+                    "veg briyani":200,
+                    "veg fried rice":245
+                }
+            ,
+            "non veg maindish":
+            
+                {
+                    "chicken briyani": 250,
+                    "mutton briyani":250
+                }
+            
+        }
+    
+}
