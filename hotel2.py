@@ -1,32 +1,26 @@
 import json
 with open("E:\python examples\python-intern-programs\hot.json") as json_file:
     data=json.load(json_file)
-    bought=["paneer roll","veg roll"]
-    # print(data["menu"]["veg starters"])
+    bought=[]
+    n=int(input("enter the number of items:"))
+    for i in range(n):
+        i=str(input("enter item name:"))
+        bought.append(i)
     def _getPrice(itemname):
         for m,n in data["menu"].items():
             for key,value in n.items():
-                print(value)
-    _getPrice("paneer roll")          
-            
-            # if(data["menu"]["veg starters"][itemname]!=None):
-            #     return (data["menu"]["veg starters"][itemname])
-        #    if (m[itemname]!=None):
-        #        return m[itemname]
-        # for m in data["menu"]["non veg starters"]:
-        #    if (m[itemname]!=None):
-        #        return m[itemname]
-        # for m in data["menu"]["veg maindish"]:
-        #    if (m[itemname]!=None):
-        #        return m[itemname]
-        # for m in data["menu"]["non veg maindish"]:
-        #    if (m[itemname]!=None):
-        #        return m[itemname]
-    # for bitem in bought:
-    #     print(_getPrice(bitem))
+                if (key==itemname):
+                    return value
 
-    # def add(a,b):
-    #     c=a+b
-    #     return(c)
-    # j=add(3,4)
-    # print(j)
+pricelist =[]       
+for b in bought:
+    if (_getPrice(b)!= None):
+        pricelist.append(_getPrice(b))
+sum=0
+for i in pricelist:
+    print(i)
+    sum = sum + int(i)
+print("Total Price :" + str(sum))
+
+
+   
